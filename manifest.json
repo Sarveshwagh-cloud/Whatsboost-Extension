@@ -1,21 +1,27 @@
 {
-    "manifest_version": 3,
-    "name": "WhatsBoost",
-    "version": "1.0",
-    "description": "Redirects to WhatsBoost dashboard",
-    "background": {
-      "service_worker": "background.js"
-    },
-    "permissions": [
-      "tabs"
-    ],
-    "action": {
-      "default_icon": {
-        "16": "icon16.png",
-        "48": "icon48.png",
-        "128": "icon128.png"
-      },
-      "default_title": "Go to WhatsBoost Dashboard"
+  "manifest_version": 3,
+  "name": "WhatsBoost",
+  "version": "1.0",
+  "description": "Opens WhatsBoost and checks for dashboard access",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Open WhatsBoost",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
     }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
   }
-  
+}
